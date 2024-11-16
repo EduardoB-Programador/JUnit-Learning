@@ -9,7 +9,7 @@ public record Category(int id, String categoryName, int discount) {
         if (discount <= 100 && discount > -1)
             this.discount = discount;
         else
-            throw new IllegalArgumentException("The discount should be less than 100 and greater than -1");
+            throw new IllegalArgumentException("The discount should be less than 101 and greater than -1");
 
     }
 
